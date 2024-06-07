@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eurekaserver
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false # Não se autoregistrar
+    fetch-registry: false # Não buscar os registros de todos os microserviços
