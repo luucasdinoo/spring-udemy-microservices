@@ -2,10 +2,17 @@ spring:
   application:
     name: eurekaserver
 
+  security:
+    basic:
+      enabled: true
+    user:
+      name: cursoms-eureka-user
+      password: muekaseus--ursrecro
+
 server:
   port: 8761
 
 eureka:
   client:
-    register-with-eureka: false # Não se autoregistrar
-    fetch-registry: false # Não buscar os registros de todos os microserviços
+    register-with-eureka: false # Nï¿½o se autoregistrar
+    fetch-registry: false # Nï¿½o buscar os registros de todos os microserviï¿½os
