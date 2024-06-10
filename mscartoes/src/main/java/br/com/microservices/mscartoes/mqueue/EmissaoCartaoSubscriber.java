@@ -5,15 +5,16 @@ import br.com.microservices.mscartoes.domain.ClienteCartao;
 import br.com.microservices.mscartoes.domain.DadosSolicitacaoEmissaoCartao;
 import br.com.microservices.mscartoes.repositories.CartaoRepository;
 import br.com.microservices.mscartoes.repositories.ClienteCartaoRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
+@Slf4j
 public class EmissaoCartaoSubscriber {
 
     private final CartaoRepository cartaoRepository;
@@ -34,7 +35,7 @@ public class EmissaoCartaoSubscriber {
 
         }
         catch (Exception e){
-            e.printStackTrace();
+            log.error("Erro ai receber solicitação de emissão de cartão: {}", e.getMessage());
         }
     }
 }
