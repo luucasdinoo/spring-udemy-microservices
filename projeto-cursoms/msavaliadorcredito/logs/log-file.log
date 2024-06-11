@@ -1,0 +1,11 @@
+2024-06-11 12:57:48.344  INFO 24592 --- [main] c.m.m.MsavaliadorcreditoApplicationTests : Starting MsavaliadorcreditoApplicationTests using Java 17.0.11 on DINO with PID 24592 (started by luuca in C:\WorkStations\ws-intelliJ\spring-udemy-microservices\projeto-cursoms\msavaliadorcredito)
+2024-06-11 12:57:48.361  INFO 24592 --- [main] c.m.m.MsavaliadorcreditoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-06-11 12:57:50.428  INFO 24592 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=577b5033-330b-362a-ac36-8e5b10a895b1
+2024-06-11 12:57:51.888  INFO 24592 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'msclientes' URL not provided. Will try picking an instance via load-balancing.
+2024-06-11 12:57:52.112  INFO 24592 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'mscartoes' URL not provided. Will try picking an instance via load-balancing.
+2024-06-11 12:57:56.486  INFO 24592 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-06-11 12:57:56.619  WARN 24592 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-11 12:57:56.642  INFO 24592 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-06-11 12:57:56.743  INFO 24592 --- [main] c.m.m.MsavaliadorcreditoApplicationTests : Started MsavaliadorcreditoApplicationTests in 9.113 seconds (JVM running for 10.983)
+2024-06-11 12:57:57.413  INFO 24592 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-06-11 12:57:57.415  INFO 24592 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSAVALIADORCREDITO with eureka with status DOWN

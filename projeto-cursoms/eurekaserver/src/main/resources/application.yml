@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: eurekaserver
+
+  security:
+    basic:
+      enabled: true
+    user:
+      name: cursoms-eureka-user
+      password: muekaseus--ursrecro
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false # N�o se autoregistrar
+    fetch-registry: false # N�o buscar os registros de todos os microservi�os
+
+
+# Commands
+# Empacotar para start dps
+# ./mvnw clean package -DskipTests
+# java -jar "mome"
